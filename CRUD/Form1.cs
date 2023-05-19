@@ -52,6 +52,7 @@ namespace CRUD
             var pessoa = cadastros.Find(x => x.Id == intID);
            
             cadastros.Remove(pessoa);
+            AtualizarGrid();
         }
 
         private void BotaoSalvarMudancas_Click(Object sender, EventArgs e)
